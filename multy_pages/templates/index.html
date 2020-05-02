@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>main</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+  </head>
+  <body>
+    <h1> האתר של איתי המלך</h1>
+    <a href="{% url 'contacts' %}">עבור לדף הבא</a>
+    <img src="{% static 'e1.jpg'%}" alt="">
+    <button type="button" name="button" onclick="buttonFunc()">הקש עלי</button>
+
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
+  </body>
+</html>
